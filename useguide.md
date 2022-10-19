@@ -56,15 +56,15 @@ Here is the user guide
 ## Warm Up
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
-It is optional.
+It is optional and general recommended if the amount of recipients is larger than 2000
 
-When send message to large amount users (several thousands to hundreds of thousands) at the first time, recommend to warm up before sending. This only need to do once for the same logon user with the same recipients. 
+This only need to warm up once for the same logon user with the same recipients. 
 
 1. Open Teams Communicator, click Logon
-2. Choose Task type (single, team, group, everyone)
+2. Choose Task type (group, everyone)
 3. Click Warm Up.
 
-The Warm up task can be stopped by click Stop or close the app. Logon user can continuously warm up it later at any time. Time is mainly spent initializing chats between logon user (sender) and recipents. Several thousands may take several hours for warm up completion.
+The Warm up task can be stopped by click Stop or close the app. Logon user can continuously warm up it later at any time. Time is mainly spent getting chats' ids from MS Graph between logon user (sender) and recipents. Several thousands may take several hours for warm up completion.
 
 
 ## Send Message
