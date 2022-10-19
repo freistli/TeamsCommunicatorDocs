@@ -5,20 +5,20 @@ Teams Communicator can help business admins to send adaptive card Teams messages
 Here is the user guide
 
 
-- [Setup](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Setup)
-  - [Azure Side](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#azure-side)
-  - [Client Side](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#client-side) 
-- [Warm Up](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Warm-Up)
-- [Send Message](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Send-Message)
-- [Resume Tasks](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Resume-Tasks)
-- [Backup Client Data](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Backup-Client-Data)
-- [Restore Client Data](https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Restore-Client-Data)
+- [Setup](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Setup)
+  - [Azure Side](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#azure-side)
+  - [Client Side](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#client-side) 
+- [Warm Up](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Warm-Up)
+- [Send Message](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Send-Message)
+- [Resume Tasks](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Resume-Tasks)
+- [Backup Client Data](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Backup-Client-Data)
+- [Restore Client Data](https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md#Restore-Client-Data)
 
 ## Setup
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md#Setup
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
 ### Azure Side
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
 1. Register App in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)), with below scopes for Delegated Permissions of Microsoft Graph:
   
@@ -45,7 +45,7 @@ Here is the user guide
   
   
 ### Client Side
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
  1. Config Tenant ID, Client ID, and Redirect Uri as below. If the register the app as Multi-Tenant, use **common** in the Tenant ID field, otherwise, use the real Tenant ID
 
@@ -54,7 +54,7 @@ Here is the user guide
    
 
 ## Warm Up
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
 It is optional.
 
@@ -68,7 +68,7 @@ The Warm up task can be stopped by click Stop or close the app. Logon user can c
 
 
 ## Send Message
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
 1. Open Teams Communicator, click Logon
 2. Click Compose Message to edit message
@@ -80,7 +80,7 @@ The Warm up task can be stopped by click Stop or close the app. Logon user can c
 The Send task can be stopped by click Stop or close the app.  Logon user can resume the same task later. After completing warm up, general tests result is sending to 6500 users takes less than 7 minutes.
 
 ## Resume Tasks
-[1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
 1. Open Teams Communicator, click Logon
 2. Click Tasks View to view existing tasks
@@ -89,13 +89,13 @@ The Send task can be stopped by click Stop or close the app.  Logon user can res
 
    
  ## Backup Client Data
- [1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+ [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
  
  1. Open Teams Communicator, click Settings. Copy the Data File Path
  2. Close App, copy all data in the data file path to backup place
  
  ## Restore Client Data
- [1]: https://github.com/freistli/privacy/edit/master/TCSetupGuide.md
+ [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
  
  1. Open Teams Communicator, click Settings. Copy the Data File Path
  2. Close App, copy data from backup place to data file path, overwrite existed ones.
