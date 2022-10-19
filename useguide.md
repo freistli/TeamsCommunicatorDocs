@@ -74,7 +74,10 @@ The Warm up task can be stopped by click Stop or close the app. Logon user can c
 2. Click Compose Message to edit message
    1. To generate the message content, click the AdaptiveCard Designer to design it. Make sure the card target version is **1.2**
    2. Copy Card Payload, and paste it into the Compose Message editor.
-3. Click Send Message, choose Task type (single, team, group, everyone)
+3. Click Send Message, choose Task type (single, team, group, everyone). 
+
+   **Please input accurate alias when sending to single, team, group. Otherwise the app picks up the first matched one for you to double confirm**
+  
 4. Click Send, and follow the wizard.
 
 The Send task can be stopped by click Stop or close the app.  Logon user can resume the same task later. After completing warm up, general tests result is sending to 6500 users takes less than 7 minutes.
