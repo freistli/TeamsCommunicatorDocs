@@ -1,6 +1,11 @@
 # Introduction
 
-Teams Communicator can help business admins to send adaptive card Teams messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
+Teams Communicator can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
+
+![image](https://user-images.githubusercontent.com/8623897/196637359-f4ed2270-3487-478b-8e8f-8b860f404db0.png)
+
+![image](https://user-images.githubusercontent.com/8623897/196637988-aaccb612-9a87-48d3-b834-032d5f679aea.png)
+
 
 Here is the user guide
 
