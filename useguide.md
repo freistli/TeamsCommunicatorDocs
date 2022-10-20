@@ -2,22 +2,25 @@
 
 **ON-PREM Communicator** can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
 
-![image](https://user-images.githubusercontent.com/8623897/196637359-f4ed2270-3487-478b-8e8f-8b860f404db0.png)
-
-![image](https://user-images.githubusercontent.com/8623897/196637988-aaccb612-9a87-48d3-b834-032d5f679aea.png)
-
+Install [ON-PREM Communicator](https://www.microsoft.com/store/apps/9NVN32B4V6G3) from Windows Store directly.
 
 Here is the user guide
 
 
 - [Setup](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Setup)
-  - [Azure Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#azure-side)
-  - [Client Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#client-side) 
+  - [Azure AD Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#azure-side)
+  - [Windows Client Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#client-side) 
 - [Warm Up](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Warm-Up)
 - [Send Message](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Send-Message)
 - [Resume Tasks](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Resume-Tasks)
 - [Backup Client Data](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Backup-Client-Data)
 - [Restore Client Data](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Restore-Client-Data)
+
+![image](https://user-images.githubusercontent.com/8623897/196637359-f4ed2270-3487-478b-8e8f-8b860f404db0.png)
+
+![image](https://user-images.githubusercontent.com/8623897/196637988-aaccb612-9a87-48d3-b834-032d5f679aea.png)
+
+
 
 ## Setup
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
@@ -60,12 +63,14 @@ Here is the user guide
 ### Client Side
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
 
- 1. Config Tenant ID, Client ID, and Redirect Uri as below. If the register the app as Multi-Tenant, use **common** in the Tenant ID field, otherwise, use the real Tenant ID
+ 1. On Windows 10/11, install it from Windows Store [ON-PREM Communicator](https://www.microsoft.com/store/apps/9NVN32B4V6G3)
+
+ 2. Config Tenant ID, Client ID, and Redirect Uri as below. If the register the app as Multi-Tenant, use **common** in the Tenant ID field, otherwise, use the real Tenant ID
 
 
    ![image](https://user-images.githubusercontent.com/8623897/196483155-ef6ed635-373c-4a6e-90c2-50d5bcc77669.png)
    
- 2. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
+ 3. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
  
     ![image](https://user-images.githubusercontent.com/8623897/196863017-2d94db31-7daa-4c14-9d0a-e1517082dfc7.png)
 
