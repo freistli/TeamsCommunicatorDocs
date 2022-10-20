@@ -74,7 +74,10 @@ Here is the user guide
  
     ![image](https://user-images.githubusercontent.com/8623897/196863017-2d94db31-7daa-4c14-9d0a-e1517082dfc7.png)
 
- 
+    If the user is not Tenant Admin, and the tenant admin didn't grant Admin Consent for organization, the user will see this warning and not able to continue:
+    
+    ![image](https://user-images.githubusercontent.com/8623897/196958321-58382c41-22ea-48a3-9980-e2dedce02758.png)
+
 
 ## Warm Up
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
