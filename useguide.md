@@ -77,7 +77,8 @@ Here is the user guide
 
     If the user is not Tenant Admin, and the tenant admin didn't grant Admin Consent for organization, the user will see this warning and not able to continue:
     
-    ![image](https://user-images.githubusercontent.com/8623897/196958321-58382c41-22ea-48a3-9980-e2dedce02758.png)
+    [<img src="https://user-images.githubusercontent.com/8623897/196958321-58382c41-22ea-48a3-9980-e2dedce02758.png" width="400"/>]
+    
 
 
 ## Warm Up
