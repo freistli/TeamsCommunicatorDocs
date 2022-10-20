@@ -1,6 +1,6 @@
 # Introduction
 
-Teams Communicator can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
+**Premises Communicator** can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
 
 ![image](https://user-images.githubusercontent.com/8623897/196637359-f4ed2270-3487-478b-8e8f-8b860f404db0.png)
 
@@ -65,7 +65,7 @@ It is optional and general recommended if the amount of recipients is larger tha
 
 This only need to warm up once for the same logon user with the same recipients. 
 
-1. Open Teams Communicator, click Logon
+1. Open Premises Communicator, click Logon
 2. Choose Task type (group, everyone)
 3. Click Warm Up.
 
@@ -75,13 +75,13 @@ The Warm up task can be stopped by click Stop or close the app. Logon user can c
 ## Send Message
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
-1. Open Teams Communicator, click Logon
+1. Open Premises Communicator, click Logon
 2. Click Compose Message to edit message
    1. To generate the message content, click the AdaptiveCard Designer to design it. Make sure the card target version is **1.2**
    2. Copy Card Payload, and paste it into the Compose Message editor.
 3. Click Send Message, choose Task type (single, team, group, everyone). 
 
-   **Please input accurate alias when sending to single, team, group. Otherwise the app picks up the first matched one for you to double confirm**
+   **Please input accurate alias when sending to team & group. Otherwise the app picks up the first matched one for you to double confirm**
   
 4. Click Send, and follow the wizard.
 
@@ -90,7 +90,7 @@ The Send task can be stopped by click Stop or close the app.  Logon user can res
 ## Resume Tasks
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
-1. Open Teams Communicator, click Logon
+1. Open Premises Communicator, click Logon
 2. Click Tasks View to view existing tasks
 3. Select one Task, click Resume Selected Task
 4. In Send Message, click Send
@@ -99,13 +99,13 @@ The Send task can be stopped by click Stop or close the app.  Logon user can res
  ## Backup Client Data
  [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
  
- 1. Open Teams Communicator, click Settings. Copy the Data File Path
+ 1. Open Premises Communicator, click Settings. Copy the Data File Path
  2. Close App, copy all data in the data file path to backup place
  
  ## Restore Client Data
  [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
  
- 1. Open Teams Communicator, click Settings. Copy the Data File Path
+ 1. Open Premises Communicator, click Settings. Copy the Data File Path
  2. Close App, copy data from backup place to data file path, overwrite existed ones.
  3. Open App.
 
