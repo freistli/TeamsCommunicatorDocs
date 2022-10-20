@@ -25,18 +25,26 @@ Here is the user guide
 ### Azure Side
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
 
-1. Register App in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)), with below scopes for Delegated Permissions of Microsoft Graph:
+1. Register App in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)). 
+
+2. Add Mobile and desktop applications call back, set "https://login.microsoftonline.com/common/oauth2/nativeclient" as call back Url
   
+
+![image](https://user-images.githubusercontent.com/8623897/196860298-bd24ff54-05a3-4ea4-8df8-b5de3bc07817.png)
+
+
+3. with below scopes for **Delegated Permissions** of **Microsoft Graph**:
+
+                "User.Read"
                 "User.Read.All
                 "Group.Read.All"
                 "Chat.Create"
+                "Chat.ReadWrite"
                 "ChannelSettings.Read.All"
                 "ChannelMessage.Send"
                 
+![image](https://user-images.githubusercontent.com/8623897/196862663-c2c27e19-55d2-4f13-92e3-2d05396e4fa0.png)
 
-2. Add Mobile and desktop applications call back, set "https://login.microsoftonline.com/common/oauth2/nativeclient" as call back Url
-
-   ![image](https://user-images.githubusercontent.com/8623897/196481082-ac1d9ce5-398e-47d8-a531-9b1a9c290d68.png)
 
    Copy Tenant ID and Client ID of the App from https://aad.portal.azure.com.
    
@@ -57,6 +65,11 @@ Here is the user guide
 
    ![image](https://user-images.githubusercontent.com/8623897/196483155-ef6ed635-373c-4a6e-90c2-50d5bcc77669.png)
    
+ 2. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
+ 
+    ![image](https://user-images.githubusercontent.com/8623897/196863017-2d94db31-7daa-4c14-9d0a-e1517082dfc7.png)
+
+ 
 
 ## Warm Up
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/edit/main/useguide.md
