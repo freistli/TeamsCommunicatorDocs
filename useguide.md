@@ -13,6 +13,7 @@ Here is the user guide
 - [Warm Up](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Warm-Up)
 - [Send Message](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Send-Message)
 - [Resume Tasks](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Resume-Tasks)
+- [Export receivers list](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Export-receivers-list)
 - [Backup Client Data](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Backup-Client-Data)
 - [Restore Client Data](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Restore-Client-Data)
 
@@ -112,9 +113,15 @@ The Send task can be stopped by click Stop or close the app.  Logon user can res
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
 
 1. Open ON-PREM Communicator, click Logon
-2. Click Tasks View to view existing tasks
+2. Click Tasks View to view existing tasks, click Load Tasks
 3. Select one Task, click Resume Selected Task
 4. In Send Message, click Send
+
+## Export receivers list
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
+1. Open ON-PREM Communicator, click Logon
+2. Click Tasks View to view existing tasks, click Load Tasks
+3. Select one Task, click Export Receivers
 
    
  ## Backup Client Data
