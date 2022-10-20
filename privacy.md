@@ -1,12 +1,12 @@
 ## Privacy Policy
 
-The Teams Communicator app as a Freemium app. This app is provided by Freist Li at no cost and is intended for use as is.
+The Premises Communicator app as a Freemium app. This app is provided by Freist Li at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding the policies with the collection, use, and disclosure of Personal Information if anyone decided to use this app
 
 If you choose to use the app, then you agree to the collection and use of information in relation to this policy. The Personal Information collected is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Teams Communicator unless otherwise defined in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Premises Communicator unless otherwise defined in this Privacy Policy.
 
 **Information Collection and Use**
 
@@ -20,7 +20,7 @@ https://azure.microsoft.com/en-us/support/legal/
 
 I want to inform you that whenever you use this app, in a case of an error in the app the collected data and information (through third party products) on your device called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing this app, the time and date of your use of this app, and other statistics.
 
-The app collects insights about how customers use this app and some of the problems they encounter. With these insights, the app developer can drive improvements and quality of Teams Communicator. Insights help to quickly identify and fix critical reliability and security issues with the applications on given configurations. The result is less downtime, reduced costs, and increased productivity associated With troubleshooting these issues.
+The app collects insights about how customers use this app and some of the problems they encounter. With these insights, the app developer can drive improvements and quality of Premises Communicator. Insights help to quickly identify and fix critical reliability and security issues with the applications on given configurations. The result is less downtime, reduced costs, and increased productivity associated With troubleshooting these issues.
 
 **Cookies**
 
