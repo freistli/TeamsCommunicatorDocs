@@ -54,7 +54,7 @@ Here is the user guide
    
    
 
-3. The login users need to be in the AAD group (create a security group **TeamsCommunicatorGP** if don't have) and be able to get Admin Consent to use the above scopes 
+3. The ON-PREM communicator users need to be in the AAD group (create a security group **TeamsCommunicatorGP** if don't have) and be able to get Admin Consent to use the above scopes (either the user has Global Admin role in AAD or Global Admin consent the scopes for the organization) 
 
    
 
