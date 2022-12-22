@@ -141,7 +141,7 @@ Steps 1&2 are the same as above MS Graph Settings section.
 
     Click Settings, click **Bot Settings**. Config Tenant ID (requires the accurate GUID, cannot use **common**), Bot Teams App ID, Bot Client ID, Bot Secret, and Bot Connector Region (in, apac, emea, amer).
    
-   ![image](https://user-images.githubusercontent.com/8623897/209060897-75f93938-720b-4ae9-a49e-113411522dd9.png)
+ ![image](https://user-images.githubusercontent.com/8623897/209085844-b970b290-a6a7-42e5-b2c9-505ff1ae4380.png)
 
    
  4. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
