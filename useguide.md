@@ -143,7 +143,10 @@ Steps 1&2 are the same as above MS Graph Settings section.
    
  ![image](https://user-images.githubusercontent.com/8623897/209085844-b970b290-a6a7-42e5-b2c9-505ff1ae4380.png)
 
-   
+ > [!NOTE]
+ > If the tenant is different from the original tenant where you create the bot app, need to let the new tenant admin access this link to consent necessary permission for the bot app:
+ > https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id={ **your bot app client id** }&scope=https://graph.microsoft.com/.default
+ > 
  4. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
  
     ![image](https://user-images.githubusercontent.com/8623897/196863017-2d94db31-7daa-4c14-9d0a-e1517082dfc7.png)
