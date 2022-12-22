@@ -23,8 +23,11 @@ Here is the user guide
 
 ![image](https://user-images.githubusercontent.com/8623897/196637359-f4ed2270-3487-478b-8e8f-8b860f404db0.png)
 
+### Send Messages As User
 ![image](https://user-images.githubusercontent.com/8623897/196637988-aaccb612-9a87-48d3-b834-032d5f679aea.png)
 
+### Send Messages As Bot (Receiver View)
+![image](https://user-images.githubusercontent.com/8623897/209061862-a3061b0a-b750-4532-b623-a147d460987f.png)
 
 
 ## Setup
