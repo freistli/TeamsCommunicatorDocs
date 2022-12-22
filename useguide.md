@@ -11,8 +11,8 @@ Here is the user guide
 
 - [Setup](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Setup)
   - [Azure AD Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#azure-side)
-    - [MS Graph Settings](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#ms-graph-settings)
-    - [Bot Settings](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#bot-settings)
+    - [MS Graph Settings (required)](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#ms-graph-settings)
+    - [Bot Settings (optional)](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#bot-settings)
   - [Windows Client Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#client-side) 
 - [Warm Up](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Warm-Up)
 - [Send Message](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Send-Message)
@@ -58,7 +58,9 @@ Here is the user guide
                 "ChannelSettings.Read.All"
                 "ChannelMessage.Send"
  
- Note: If you send notificaitons as Bot instead of User, "Chat.Create", "Chat.ReadWrite" and "ChannelMessage.Send" are not required.
+> [!NOTE]
+>
+> If you send notificaitons as Bot instead of User, "Chat.Create", "Chat.ReadWrite" and "ChannelMessage.Send" are not required.
                 
 ![image](https://user-images.githubusercontent.com/8623897/196862663-c2c27e19-55d2-4f13-92e3-2d05396e4fa0.png)
 
@@ -68,12 +70,13 @@ Here is the user guide
    
 
 3. The ON-PREM communicator users need to be in the AAD group (create a security group **TeamsCommunicatorGP** if don't have) and be able to get Admin Consent to use the above scopes (either the user has Global Admin role, Application Admin role, Cloud Application Admin role in AAD, or Admins consents the scopes for the organization) 
-
    
 
   ![image](https://user-images.githubusercontent.com/8623897/196481916-bada985b-8725-45e3-b334-e74a8dd2b19b.png)
   
+
 #### Bot Settings
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
 
 > [!NOTE]
 >
