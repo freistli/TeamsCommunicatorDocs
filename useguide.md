@@ -2,6 +2,8 @@
 
 **ON-PREM Communicator** can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
 
+With it, can send notification messages on behavior of admins and as Bot App.
+
 Install [ON-PREM Communicator](https://www.microsoft.com/store/apps/9NVN32B4V6G3) from Windows Store directly.
 
 Here is the user guide
@@ -9,6 +11,8 @@ Here is the user guide
 
 - [Setup](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Setup)
   - [Azure AD Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#azure-side)
+    - [MS Graph Settings](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#ms-graph-settings)
+    - [Bot Settings](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#bot-settings)
   - [Windows Client Side](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#client-side) 
 - [Warm Up](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Warm-Up)
 - [Send Message](https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md#Send-Message)
@@ -29,7 +33,14 @@ Here is the user guide
 ### Azure Side
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
 
-1. Register App in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)). 
+#### MS Graph Settings
+[1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
+
+> [!NOTE]
+>
+> Graph Settings are required for this app.
+
+1. Register App (for example: TCApp) in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)). 
 
 2. Add Mobile and desktop applications call back, set "https://login.microsoftonline.com/common/oauth2/nativeclient" as call back Url
   
@@ -37,7 +48,7 @@ Here is the user guide
 ![image](https://user-images.githubusercontent.com/8623897/196860298-bd24ff54-05a3-4ea4-8df8-b5de3bc07817.png)
 
 
-3. with below scopes for **Delegated Permissions** of **Microsoft Graph**:
+3. Add below scopes for **Delegated Permissions** of **Microsoft Graph** in the **API permissions** left menu:
 
                 "User.Read"
                 "User.Read.All
@@ -46,6 +57,8 @@ Here is the user guide
                 "Chat.ReadWrite"
                 "ChannelSettings.Read.All"
                 "ChannelMessage.Send"
+ 
+ Note: If you send notificaitons as Bot instead of User, "Chat.Create", "Chat.ReadWrite" and "ChannelMessage.Send" are not required.
                 
 ![image](https://user-images.githubusercontent.com/8623897/196862663-c2c27e19-55d2-4f13-92e3-2d05396e4fa0.png)
 
@@ -60,18 +73,72 @@ Here is the user guide
 
   ![image](https://user-images.githubusercontent.com/8623897/196481916-bada985b-8725-45e3-b334-e74a8dd2b19b.png)
   
-  
+#### Bot Settings
+
+> [!NOTE]
+>
+> If you don't want to send notifications as Bot App, this section can be skipped. This section reuquires experienced skillsets of configurating Azure Bot Service and deploying Teams Bot App.
+
+1. Register App (for example: TCBotApp) in Azure AD https://aad.portal.azure.com (Refer to [Register your app with the Azure AD v2.0 endpoint](https://learn.microsoft.com/en-us/graph/auth-register-app-v2?view=graph-rest-1.0)). Copy the client ID.
+
+2. Add Mobile and desktop applications call back, set "https://login.microsoftonline.com/common/oauth2/nativeclient" as call back Url
+
+Steps 1&2 are the same as above MS Graph Settings section.
+
+3. Add below scopes for **Application Permissions** of **Microsoft Graph** in the **API permissions** left menu:
+
+                "AppCatalog.Read.All"
+                "Group.Read.All"
+                "User.Read.All
+                "TeamsAppInstallation.ReadWriteForTeam.All"
+                "TeamsAppInstallation.ReadWriteForUser.All"
+
+4. Add a new client secret in the **Certificates & secrets" left menu. Copy the client secret.
+
+5. Open Azure Portal, add a new Azure Bot Service.
+
+![image](https://user-images.githubusercontent.com/8623897/209060598-8edc0f63-6b37-4cc5-8df9-fb04bb9f202d.png)
+
+6. Use the copied App ID to fill the Bot Service client ID. Create the new Bot service.
+
+![image](https://user-images.githubusercontent.com/8623897/209060631-fcb09b48-4aed-4b7b-91d6-976907d4d92f.png)
+
+
+7. Open **Teams**, Open the **Developer Portal** app, create a new App, add Bot feature with the copied client ID, choose **Only send notifications**, **Peronsal**, and **Team** optins.
+
+![image](https://user-images.githubusercontent.com/8623897/209060644-d211d09d-8598-45e6-9fca-4713d053a679.png)
+
+
+8. Click **Basic Information**, copy its Teams App ID.
+
+![image](https://user-images.githubusercontent.com/8623897/209060830-636abce7-8f1a-4325-96c6-596da9f8ad2c.png)
+
+
+9. Publish the Bot App, get its package. 
+
+10. Upload the app to your organization.
+
+
 ### Client Side
+
+
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
 
  1. On Windows 10/11, install it from Windows Store [ON-PREM Communicator](https://www.microsoft.com/store/apps/9NVN32B4V6G3)
 
- 2. Config Tenant ID, Client ID, and Redirect Uri as below. If the register the app as Multi-Tenant, use **common** in the Tenant ID field, otherwise, use the real Tenant ID
+ 2. Config Tenant ID, Client ID, and Redirect Uri in **MS Graph Setting**. If the register the app as Multi-Tenant, use **common** in the Tenant ID field, otherwise, use the real Tenant ID
+
+![image](https://user-images.githubusercontent.com/8623897/209060865-54a396c5-6ba4-4f37-a167-01a56a03f8b9.png)
 
 
-   ![image](https://user-images.githubusercontent.com/8623897/196483155-ef6ed635-373c-4a6e-90c2-50d5bcc77669.png)
+ 3. This step is for **Send Messages as Bot**. If don't need, can skip it.
+
+    Click Settings, click **Bot Settings**. Config Tenant ID (requires the accurate GUID, cannot use **common**), Bot Teams App ID, Bot Client ID, Bot Secret, and Bot Connector Region (in, apac, emea, amer).
    
- 3. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
+   ![image](https://user-images.githubusercontent.com/8623897/209060897-75f93938-720b-4ae9-a49e-113411522dd9.png)
+
+   
+ 4. Click Logon, to give Admin Consent (If you only want Admin roles to use this app, don't select Consent on behalf of your organaization):
  
     ![image](https://user-images.githubusercontent.com/8623897/196863017-2d94db31-7daa-4c14-9d0a-e1517082dfc7.png)
 
@@ -79,7 +146,6 @@ Here is the user guide
     
     [<img src="https://user-images.githubusercontent.com/8623897/196958321-58382c41-22ea-48a3-9980-e2dedce02758.png" width="400"/>]
     
-
 
 ## Warm Up
 [1]: https://github.com/freistli/TeamsCommunicatorDocs/blob/main/useguide.md
