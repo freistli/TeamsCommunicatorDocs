@@ -164,7 +164,11 @@ This only need to warm up once for the same logon user with the same recipients.
 2. Choose Task type (group, everyone)
 3. Click Warm Up.
 
-The Warm up task can be stopped by click Stop or close the app. Logon user can continuously warm up it later at any time. Time is mainly spent getting chats' ids from MS Graph between logon user (sender) and recipents. Several thousands may take several hours for warm up completion.
+The Warm up task can be stopped by click Stop or close the app. Logon user can continuously warm up it later at any time. 
+
+When send messages as User, warm up time is mainly spent getting chats' ids from MS Graph between logon user (sender) and recipents. Several thousands may take several hours for warm up completion.
+
+When send messages as Bot,  warm up time is mainly spent auto installing the bot app for the recipents. Several thousands may take one hour. It is faster.
 
 
 ## Send Message
