@@ -2,7 +2,7 @@
 
 **ON-PREM Communicator** can help business admins to send adaptive card **Microsoft Teams** messages to users, group, team, or Everyone securely through minimum deployment efforts and convenient operations. 
 
-With it, can send notification messages on behavior of admins and as Bot App.
+With it, can send notification messages as Admins and Bot App.
 
 Install [ON-PREM Communicator](https://www.microsoft.com/store/apps/9NVN32B4V6G3) from Windows Store directly.
 
